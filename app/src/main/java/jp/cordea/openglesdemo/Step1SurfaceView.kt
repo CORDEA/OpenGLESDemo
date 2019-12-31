@@ -10,6 +10,7 @@ class Step1SurfaceView @JvmOverloads constructor(
 ) : GLSurfaceView(context, attrs) {
     init {
         setEGLContextClientVersion(2)
+        setRenderer(Step1Renderer())
         renderMode = RENDERMODE_WHEN_DIRTY
     }
 }
