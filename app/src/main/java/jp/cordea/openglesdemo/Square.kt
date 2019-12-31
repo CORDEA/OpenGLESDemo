@@ -70,6 +70,7 @@ class Square {
                     GLES20.glCompileShader(this)
                 }
             )
+            GLES20.glLinkProgram(this)
         }
     }
 
